@@ -8,6 +8,16 @@ from utils.logger import LOG
 agents = {
     "job_interview": ScenarioAgent("job_interview"),
     "hotel_checkin": ScenarioAgent("hotel_checkin"),
+    "salary_negotiation": ScenarioAgent("salary_negotiation"),
+    "renting": ScenarioAgent("renting"),
+    "leave_request": ScenarioAgent("leave_request"),
+    "baggage_checkin": ScenarioAgent("baggage_checkin"),
+    "car_rental": ScenarioAgent("car_rental"),
+    "dining_out": ScenarioAgent("dining_out"),
+    "travel_planning": ScenarioAgent("travel_planning"),
+    "rideshare": ScenarioAgent("rideshare"),
+    "resume_preparation": ScenarioAgent("resume_preparation"),
+    "dating": ScenarioAgent("dating"),
     # 可以根据需要添加更多场景代理
 }
 
@@ -44,9 +54,17 @@ def create_scenario_tab():
             choices=[
                 ("求职面试", "job_interview"),  # 求职面试选项
                 ("酒店入住", "hotel_checkin"),  # 酒店入住选项
-                # ("薪资谈判", "salary_negotiation"),  # 薪资谈判选项（注释掉）
-                # ("租房", "renting")  # 租房选项（注释掉）
-            ], 
+                ("薪资谈判", "salary_negotiation"),  # 薪资谈判选项
+                ("租房", "renting"),  # 租房选项
+                ("单位请假", "leave_request"),  # 单位请假选项
+                ("机场托运", "baggage_checkin"),  # 机场托运选项
+                ("自驾租车", "car_rental"),  # 自驾租车选项
+                ("聚餐吃饭", "dining_out"),  # 聚餐吃饭选项
+                ("出行旅游", "travel_planning"),  # 出行旅游选项
+                ("滴滴打车", "rideshare"),  # 滴滴打车选项
+                ("准备简历", "resume_preparation"),  # 准备简历选项
+                ("恋爱约会", "dating")  # 恋爱约会选项
+            ],
             label="场景"  # 单选框标签
         )
 
